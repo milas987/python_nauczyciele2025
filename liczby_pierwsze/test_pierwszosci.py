@@ -15,3 +15,4 @@ if __name__ == '__main__':
     wynik=czy_pierwsza(liczba)
     print(wynik)
 
+
