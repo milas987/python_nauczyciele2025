@@ -1,4 +1,4 @@
-def sortuj_przez_wybieranie(dane):
+def sortuj_przez_wstawianie(dane):
     n=len(dane)
 
     for i in range(n):
