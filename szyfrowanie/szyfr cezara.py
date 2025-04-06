@@ -8,7 +8,17 @@ alfabet= [chr(i) for i in range(ord ('a'), ord('z')+1)]
 
 def szyfruj (napis, klucz):
     szyfr= [alfabet[(i+ klucz)% len (alfabet)] for i in range (len(alfabet))]
-    print(szyfr)
+    wynik=''
+    for znak in napis:
+        if znak.islower ():
+            indeks = ord(znak)- ord ('a')
+            zaszyfrowany_znak=szyfr[indeks]
+            wynik+= zaszyfrowany_znak
+        else:
+            wynik+=znak
+    return wynik
+
+
 def odszyfruj (napis, klucz):
     pass
 
