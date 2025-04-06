@@ -1,8 +1,18 @@
-def szyfruj (napis, klucz):
-    pass
-def odszyfruj (napis, klucz):
+# alfabet = ""
+# for i in range (ord('a'), ord('z')+1):
+#     alfabet+=(chr(i))
 
-if__name__=='__main__':
+
+
+alfabet= [chr(i) for i in range(ord ('a'), ord('z')+1)]
+
+def szyfruj (napis, klucz):
+    szyfr= [alfabet[(i+ klucz)% len (alfabet)] for i in range (len(alfabet))]
+    print(szyfr)
+def odszyfruj (napis, klucz):
+    pass
+
+if __name__== '__main__':
     napis = "ala ma kota"
     klucz = 3
     zaszyfrowany_napis = szyfruj(napis, klucz)
