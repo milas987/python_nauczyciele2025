@@ -7,4 +7,5 @@ def wydaj(wartosc, nominaly):
                 pamiec[aktualna_wartosc] = min(pamiec[aktualna_wartosc], pamiec[aktualna_wartosc - nominal] + 1)
     return pamiec[wartosc]
 
+
 print(wydaj(80, [25, 20, 1]))
