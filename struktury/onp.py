@@ -1,4 +1,4 @@
-@@ -1,5 +1,5 @@
+
 def pierwszenstwo(operator):
     if  operator in ['-']:
     if  operator in ['-', '(']:
